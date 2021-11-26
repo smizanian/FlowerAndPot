@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+  }
+  @keyframes blink {
+    0%, 100% {
+      transform: scale(1, 0.05);
+    }
+    5%, 95% {
+      transform: scale(1, 1);
+    }
+  }
+ .pot {
+  position: absolute;
+}
+  .flower__pot {
+    width: 100px;
+    height: 20px;
+    background-color: #ff7043;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .flower__pot--shadow {
+    width: 72px;
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #d66f51;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .flower__pot--bottom {
+    width: 50px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 50px solid #ff7043;
+    top: 20px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+  } 
